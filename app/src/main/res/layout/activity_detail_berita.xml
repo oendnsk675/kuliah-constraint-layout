@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#F3F1F1"
+    tools:context=".DetailBerita">
+
+    <ImageButton
+        android:id="@+id/arrow_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@android:color/transparent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/arrow_back"
+        android:scrollbars="none">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Wapres Ma'ruf: Jangan Jadikan Ramadan Jadi Bulan yang Lebih Konsumtif"
+                android:textColor="#181818"
+                android:textSize="22dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:paddingBottom="15dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="25dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/fp" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="sayidina"
+                            android:textStyle="bold"
+                            android:textColor="#181818"
+                            android:textSize="17dp"
+                            android:layout_marginStart="10dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12dp"
+                            android:textColor="#B7181818"
+                            android:text="Sabtu, 02 Apr 2022 11:55 WIB"
+                            android:layout_marginStart="10dp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profile"
+                android:paddingBottom="25dp">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/favorite"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1909"
+                    android:layout_marginStart="5dp"
+                    android:textColor="#181818"
+                    android:layout_gravity="center"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/comment"
+                    android:layout_marginStart="20dp"
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2000"
+                    android:layout_marginStart="5dp"
+                    android:textColor="#181818"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="213dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/reaction"
+                android:src="@drawable/b2"/>
+
+            <TextView
+                android:id="@+id/body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#181818"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/banner"
+                android:text="Jakarta - Wakil Presiden (Wapres) Ma'ruf Amin mengajak umat Islam untuk memperbanyak zakat di bulan Ramadan nanti. Ma'ruf juga mengingatkan para umat muslim untuk tidak menjadikan bulan Ramadan menjadi bulan yang lebih konsumtif. 'Saya juga mengajak seluruh umat Islam Indonesia agar menjadikan Ramadan sebagai syahr as-shadaqah atau bulan untuk memperbanyak sedekah termasuk juga mengeluarkan zakat mal sebab momentumnya begitu tepat, dan jangan menjadikan bulan Ramadan sebagai bulan yang lebih konsumtif,' kata Ma'ruf dalam sambutan 1 Ramadan 1443 Hijriah, Sabtu (2/4/2022). \n \n Ma'ruf menyebut ibadah puasa merupakan ibadah yang tak terlihat, yang hanya diketahui diri sendiri. Maka dengan itu, ia menyarankan umat muslim untuk mendekatkan diri kepada Allah SWT."/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
